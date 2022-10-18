@@ -248,7 +248,7 @@ function toggleMenu(toggle) {
 	if (typeof toggle === 'boolean') {
 		store.setState({ menuOpen: toggle });
 	} else {
-		store.setState({ menuOpen: !store.state.menuOpen });
+		store.setState({ menuOpen: store.state.menuOpen });
 	}
 }
 
