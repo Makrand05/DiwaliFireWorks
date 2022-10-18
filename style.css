@@ -82,7 +82,10 @@ body {
   transition: filter 0.3s, -webkit-filter 0.3s;
 }
 .canvas-container canvas {
+	
 	background-image:url(bgimg.png);
+	background-repeat:no-repeat;
+	background-position:center;
   position: absolute;
   mix-blend-mode: lighten;
   -webkit-transform: translateZ(0);
