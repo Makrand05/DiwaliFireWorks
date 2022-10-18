@@ -240,7 +240,7 @@ function toggleSound(toggle) {
 	if (typeof toggle === 'boolean') {
 		store.setState({ soundEnabled: toggle });
 	} else {
-		store.setState({ soundEnabled: !store.state.soundEnabled });
+		store.setState({ soundEnabled: store.state.soundEnabled });
 	}
 }
 
@@ -248,7 +248,7 @@ function toggleMenu(toggle) {
 	if (typeof toggle === 'boolean') {
 		store.setState({ menuOpen: toggle });
 	} else {
-		store.setState({ menuOpen: store.state.menuOpen });
+		store.setState({ menuOpen: !store.state.menuOpen });
 	}
 }
 
@@ -1365,7 +1365,7 @@ function render(speed) {
 	trailsCtx.lineWidth = Star.drawWidth;
 	trailsCtx.lineCap = isLowQuality ? 'square' : 'round';
 	mainCtx.strokeStyle = '#fff';
-  mainCtx.lineWidth = 1;
+  mainCtx.lineWidth = 1;
 	mainCtx.beginPath();
 	COLOR_CODES.forEach(color => {
 		const stars = Star.active[color];
