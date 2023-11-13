@@ -85,6 +85,10 @@ body {
 	
 	background-image:url(bgimg2023.png);
 	background-repeat:no-repeat;
+	background-image:    url(images/background.svg);
+    background-size:     cover;                   /* <------ */
+   
+    background-position: center center; 
 	background-position:center;
   position: absolute;
   mix-blend-mode: lighten;
