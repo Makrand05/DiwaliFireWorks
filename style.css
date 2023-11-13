@@ -83,17 +83,12 @@ body {
 }
 .canvas-container canvas {
 	
-	background-image:url(bgimg3.png);
+	background-image:url(bgimg3.png);	
 	background-repeat:no-repeat;
-	
-    background-size:     cover;                   /* <------ */
-   
-    background-position: center center; 
 	background-position:center;
   position: absolute;
   mix-blend-mode: lighten;
-  -webkit-transform: translateZ(0);
-          transform: translateZ(0);
+  -webkit-transform: translateZ(0);        
 }
 
 .controls {
